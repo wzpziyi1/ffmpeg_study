@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		090BEE67261C2119009D59C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE66261C2119009D59C8 /* AppDelegate.m */; };
+		090BEE6A261C2119009D59C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE69261C2119009D59C8 /* ViewController.m */; };
+		090BEE6C261C211B009D59C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090BEE6B261C211B009D59C8 /* Assets.xcassets */; };
+		090BEE6F261C211B009D59C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090BEE6D261C211B009D59C8 /* Main.storyboard */; };
+		090BEE72261C211B009D59C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE71261C211B009D59C8 /* main.m */; };
+		090BEE7D261C211B009D59C8 /* _3_RecordAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE7C261C211B009D59C8 /* _3_RecordAudioTests.m */; };
+		090BEE88261C211B009D59C8 /* _3_RecordAudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE87261C211B009D59C8 /* _3_RecordAudioUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		090BEE79261C211B009D59C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 090BEE5A261C2119009D59C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 090BEE61261C2119009D59C8;
+			remoteInfo = "03-RecordAudio";
+		};
+		090BEE84261C211B009D59C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 090BEE5A261C2119009D59C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 090BEE61261C2119009D59C8;
+			remoteInfo = "03-RecordAudio";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		090BEE62261C2119009D59C8 /* 03-RecordAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-RecordAudio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		090BEE65261C2119009D59C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		090BEE66261C2119009D59C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		090BEE68261C2119009D59C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		090BEE69261C2119009D59C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		090BEE6B261C211B009D59C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		090BEE6E261C211B009D59C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		090BEE70261C211B009D59C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090BEE71261C211B009D59C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		090BEE73261C211B009D59C8 /* _3_RecordAudio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _3_RecordAudio.entitlements; sourceTree = "<group>"; };
+		090BEE78261C211B009D59C8 /* 03-RecordAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-RecordAudioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		090BEE7C261C211B009D59C8 /* _3_RecordAudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _3_RecordAudioTests.m; sourceTree = "<group>"; };
+		090BEE7E261C211B009D59C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090BEE83261C211B009D59C8 /* 03-RecordAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-RecordAudioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		090BEE87261C211B009D59C8 /* _3_RecordAudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _3_RecordAudioUITests.m; sourceTree = "<group>"; };
+		090BEE89261C211B009D59C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		090BEE5F261C2119009D59C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090BEE75261C211B009D59C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090BEE80261C211B009D59C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090BEE59261C2119009D59C8 = {
+			isa = PBXGroup;
+			children = (
+				090BEE64261C2119009D59C8 /* 03-RecordAudio */,
+				090BEE7B261C211B009D59C8 /* 03-RecordAudioTests */,
+				090BEE86261C211B009D59C8 /* 03-RecordAudioUITests */,
+				090BEE63261C2119009D59C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		090BEE63261C2119009D59C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				090BEE62261C2119009D59C8 /* 03-RecordAudio.app */,
+				090BEE78261C211B009D59C8 /* 03-RecordAudioTests.xctest */,
+				090BEE83261C211B009D59C8 /* 03-RecordAudioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		090BEE64261C2119009D59C8 /* 03-RecordAudio */ = {
+			isa = PBXGroup;
+			children = (
+				090BEE65261C2119009D59C8 /* AppDelegate.h */,
+				090BEE66261C2119009D59C8 /* AppDelegate.m */,
+				090BEE68261C2119009D59C8 /* ViewController.h */,
+				090BEE69261C2119009D59C8 /* ViewController.m */,
+				090BEE6B261C211B009D59C8 /* Assets.xcassets */,
+				090BEE6D261C211B009D59C8 /* Main.storyboard */,
+				090BEE70261C211B009D59C8 /* Info.plist */,
+				090BEE71261C211B009D59C8 /* main.m */,
+				090BEE73261C211B009D59C8 /* _3_RecordAudio.entitlements */,
+			);
+			path = "03-RecordAudio";
+			sourceTree = "<group>";
+		};
+		090BEE7B261C211B009D59C8 /* 03-RecordAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				090BEE7C261C211B009D59C8 /* _3_RecordAudioTests.m */,
+				090BEE7E261C211B009D59C8 /* Info.plist */,
+			);
+			path = "03-RecordAudioTests";
+			sourceTree = "<group>";
+		};
+		090BEE86261C211B009D59C8 /* 03-RecordAudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				090BEE87261C211B009D59C8 /* _3_RecordAudioUITests.m */,
+				090BEE89261C211B009D59C8 /* Info.plist */,
+			);
+			path = "03-RecordAudioUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		090BEE61261C2119009D59C8 /* 03-RecordAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090BEE8C261C211B009D59C8 /* Build configuration list for PBXNativeTarget "03-RecordAudio" */;
+			buildPhases = (
+				090BEE5E261C2119009D59C8 /* Sources */,
+				090BEE5F261C2119009D59C8 /* Frameworks */,
+				090BEE60261C2119009D59C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-RecordAudio";
+			productName = "03-RecordAudio";
+			productReference = 090BEE62261C2119009D59C8 /* 03-RecordAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		090BEE77261C211B009D59C8 /* 03-RecordAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090BEE8F261C211B009D59C8 /* Build configuration list for PBXNativeTarget "03-RecordAudioTests" */;
+			buildPhases = (
+				090BEE74261C211B009D59C8 /* Sources */,
+				090BEE75261C211B009D59C8 /* Frameworks */,
+				090BEE76261C211B009D59C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				090BEE7A261C211B009D59C8 /* PBXTargetDependency */,
+			);
+			name = "03-RecordAudioTests";
+			productName = "03-RecordAudioTests";
+			productReference = 090BEE78261C211B009D59C8 /* 03-RecordAudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		090BEE82261C211B009D59C8 /* 03-RecordAudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090BEE92261C211B009D59C8 /* Build configuration list for PBXNativeTarget "03-RecordAudioUITests" */;
+			buildPhases = (
+				090BEE7F261C211B009D59C8 /* Sources */,
+				090BEE80261C211B009D59C8 /* Frameworks */,
+				090BEE81261C211B009D59C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				090BEE85261C211B009D59C8 /* PBXTargetDependency */,
+			);
+			name = "03-RecordAudioUITests";
+			productName = "03-RecordAudioUITests";
+			productReference = 090BEE83261C211B009D59C8 /* 03-RecordAudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		090BEE5A261C2119009D59C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					090BEE61261C2119009D59C8 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					090BEE77261C211B009D59C8 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 090BEE61261C2119009D59C8;
+					};
+					090BEE82261C211B009D59C8 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 090BEE61261C2119009D59C8;
+					};
+				};
+			};
+			buildConfigurationList = 090BEE5D261C2119009D59C8 /* Build configuration list for PBXProject "03-RecordAudio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 090BEE59261C2119009D59C8;
+			productRefGroup = 090BEE63261C2119009D59C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				090BEE61261C2119009D59C8 /* 03-RecordAudio */,
+				090BEE77261C211B009D59C8 /* 03-RecordAudioTests */,
+				090BEE82261C211B009D59C8 /* 03-RecordAudioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		090BEE60261C2119009D59C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090BEE6C261C211B009D59C8 /* Assets.xcassets in Resources */,
+				090BEE6F261C211B009D59C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090BEE76261C211B009D59C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090BEE81261C211B009D59C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		090BEE5E261C2119009D59C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090BEE6A261C2119009D59C8 /* ViewController.m in Sources */,
+				090BEE72261C211B009D59C8 /* main.m in Sources */,
+				090BEE67261C2119009D59C8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090BEE74261C211B009D59C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090BEE7D261C211B009D59C8 /* _3_RecordAudioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090BEE7F261C211B009D59C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090BEE88261C211B009D59C8 /* _3_RecordAudioUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		090BEE7A261C211B009D59C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 090BEE61261C2119009D59C8 /* 03-RecordAudio */;
+			targetProxy = 090BEE79261C211B009D59C8 /* PBXContainerItemProxy */;
+		};
+		090BEE85261C211B009D59C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 090BEE61261C2119009D59C8 /* 03-RecordAudio */;
+			targetProxy = 090BEE84261C211B009D59C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		090BEE6D261C211B009D59C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090BEE6E261C211B009D59C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		090BEE8A261C211B009D59C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		090BEE8B261C211B009D59C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		090BEE8D261C211B009D59C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "03-RecordAudio/_3_RecordAudio.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T6FCKHRT95;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "03-RecordAudio/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xxxx.-3-RecordAudio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		090BEE8E261C211B009D59C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "03-RecordAudio/_3_RecordAudio.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T6FCKHRT95;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "03-RecordAudio/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xxxx.-3-RecordAudio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		090BEE90261C211B009D59C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T6FCKHRT95;
+				INFOPLIST_FILE = "03-RecordAudioTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "xxxx.-3-RecordAudioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/03-RecordAudio.app/Contents/MacOS/03-RecordAudio";
+			};
+			name = Debug;
+		};
+		090BEE91261C211B009D59C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T6FCKHRT95;
+				INFOPLIST_FILE = "03-RecordAudioTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "xxxx.-3-RecordAudioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/03-RecordAudio.app/Contents/MacOS/03-RecordAudio";
+			};
+			name = Release;
+		};
+		090BEE93261C211B009D59C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T6FCKHRT95;
+				INFOPLIST_FILE = "03-RecordAudioUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xxxx.-3-RecordAudioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "03-RecordAudio";
+			};
+			name = Debug;
+		};
+		090BEE94261C211B009D59C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T6FCKHRT95;
+				INFOPLIST_FILE = "03-RecordAudioUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xxxx.-3-RecordAudioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "03-RecordAudio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		090BEE5D261C2119009D59C8 /* Build configuration list for PBXProject "03-RecordAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090BEE8A261C211B009D59C8 /* Debug */,
+				090BEE8B261C211B009D59C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090BEE8C261C211B009D59C8 /* Build configuration list for PBXNativeTarget "03-RecordAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090BEE8D261C211B009D59C8 /* Debug */,
+				090BEE8E261C211B009D59C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090BEE8F261C211B009D59C8 /* Build configuration list for PBXNativeTarget "03-RecordAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090BEE90261C211B009D59C8 /* Debug */,
+				090BEE91261C211B009D59C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090BEE92261C211B009D59C8 /* Build configuration list for PBXNativeTarget "03-RecordAudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090BEE93261C211B009D59C8 /* Debug */,
+				090BEE94261C211B009D59C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 090BEE5A261C2119009D59C8 /* Project object */;
+}
