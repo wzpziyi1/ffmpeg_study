@@ -1,0 +1,14 @@
+prefix=/usr/local/Cellar/ffmpeg/4.3.1_9
+exec_prefix=${prefix}
+libdir=/usr/local/Cellar/ffmpeg/4.3.1_9/lib
+includedir=/usr/local/Cellar/ffmpeg/4.3.1_9/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 7.85.100
+Requires: 
+Requires.private: libswscale >= 5.7.100, libpostproc >= 55.7.100, libavformat >= 58.45.100, libavcodec >= 58.91.100, libswresample >= 3.7.100, libavresample >= 4.0.0, libavutil >= 56.51.100
+Conflicts:
+Libs: -L${libdir}  -lavfilter 
+Libs.private: -framework OpenGL -framework OpenGL -pthread -lm -L/usr/local/opt/rubberband/lib -lrubberband -lstdc++ -L/usr/local/Cellar/tesseract/4.1.1/lib -ltesseract -lcurl -L/usr/local/Cellar/libass/0.15.0/lib -lass -L/usr/local/Cellar/libvidstab/1.1.0/lib -lvidstab -lm -L/usr/local/Cellar/zeromq/4.3.3_1/lib -lzmq -L/usr/local/Cellar/zimg/3.0.1/lib -lzimg -framework CoreImage -framework AppKit -L/usr/local/opt/freetype/lib -L/usr/local/Cellar/fontconfig/2.13.1/lib -lfontconfig -lfreetype -L/usr/local/opt/freetype/lib -lfreetype
+Cflags: -I${includedir}

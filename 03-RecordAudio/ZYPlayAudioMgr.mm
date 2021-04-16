@@ -11,6 +11,8 @@ extern "C" {
 #import <SDL2/SDL.h>
 }
 
+#define kAudioPath @"/Users/wzp/Downloads/xxxxx.pcm"
+
 #define kSampleRate 44100
 #define kChannelCount 2
 
@@ -48,6 +50,8 @@ static int readLen = 0;
 void pullAudioCallback(void *userdata, Uint8 * stream, int len)
 {
     SDL_memset(stream, 0, len);
+    
+    //取出
 }
 
 - (void)playAudio

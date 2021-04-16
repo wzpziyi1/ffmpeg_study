@@ -7,10 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface ZYPlayAudioMgr : NSObject
-
+- (void)sdlVersion;
 @end
-
-NS_ASSUME_NONNULL_END

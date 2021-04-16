@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		090BEE67261C2119009D59C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE66261C2119009D59C8 /* AppDelegate.m */; };
-		090BEE6A261C2119009D59C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE69261C2119009D59C8 /* ViewController.m */; };
+		090BEE6A261C2119009D59C8 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE69261C2119009D59C8 /* ViewController.mm */; };
 		090BEE6C261C211B009D59C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090BEE6B261C211B009D59C8 /* Assets.xcassets */; };
 		090BEE6F261C211B009D59C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090BEE6D261C211B009D59C8 /* Main.storyboard */; };
-		090BEE72261C211B009D59C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE71261C211B009D59C8 /* main.m */; };
+		090BEE72261C211B009D59C8 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE71261C211B009D59C8 /* main.mm */; };
 		090BEE7D261C211B009D59C8 /* _3_RecordAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE7C261C211B009D59C8 /* _3_RecordAudioTests.m */; };
 		090BEE88261C211B009D59C8 /* _3_RecordAudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE87261C211B009D59C8 /* _3_RecordAudioUITests.m */; };
+		090BEEBB261C2257009D59C8 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 090BEEB5261C2246009D59C8 /* libavcodec.a */; };
+		090BEEBC261C2257009D59C8 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 090BEEB9261C2246009D59C8 /* libavdevice.a */; };
+		090BEEBD261C2257009D59C8 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 090BEEB8261C2246009D59C8 /* libavfilter.a */; };
+		090BEEBE261C2257009D59C8 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 090BEEB3261C2246009D59C8 /* libavformat.a */; };
+		090BEEBF261C2257009D59C8 /* libavresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 090BEEBA261C2246009D59C8 /* libavresample.a */; };
+		090BEEC0261C2257009D59C8 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 090BEEB2261C2246009D59C8 /* libavutil.a */; };
+		090BEEC1261C2257009D59C8 /* libpostproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 090BEEB6261C2246009D59C8 /* libpostproc.a */; };
+		090BEEC2261C2257009D59C8 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 090BEEB7261C2246009D59C8 /* libswresample.a */; };
+		090BEEC3261C2257009D59C8 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 090BEEB4261C2246009D59C8 /* libswscale.a */; };
+		09EF7AA426297233004C28DE /* ZYPlayAudioMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09EF7AA326297233004C28DE /* ZYPlayAudioMgr.mm */; };
+		09EF7ACD2629769B004C28DE /* libSDL2_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF7ACA26297699004C28DE /* libSDL2_test.a */; };
+		09EF7ACE2629769B004C28DE /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF7ACB26297699004C28DE /* libSDL2.a */; };
+		09EF7ACF2629769B004C28DE /* libSDL2main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF7ACC26297699004C28DE /* libSDL2main.a */; };
+		09F74E5F26255A0300CF82DA /* ZYRecordAudioMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09F74E5E26255A0300CF82DA /* ZYRecordAudioMgr.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +52,11 @@
 		090BEE65261C2119009D59C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		090BEE66261C2119009D59C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		090BEE68261C2119009D59C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		090BEE69261C2119009D59C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		090BEE69261C2119009D59C8 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		090BEE6B261C211B009D59C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		090BEE6E261C211B009D59C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		090BEE70261C211B009D59C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		090BEE71261C211B009D59C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		090BEE71261C211B009D59C8 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		090BEE73261C211B009D59C8 /* _3_RecordAudio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _3_RecordAudio.entitlements; sourceTree = "<group>"; };
 		090BEE78261C211B009D59C8 /* 03-RecordAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-RecordAudioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		090BEE7C261C211B009D59C8 /* _3_RecordAudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _3_RecordAudioTests.m; sourceTree = "<group>"; };
@@ -50,6 +64,22 @@
 		090BEE83261C211B009D59C8 /* 03-RecordAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-RecordAudioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		090BEE87261C211B009D59C8 /* _3_RecordAudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _3_RecordAudioUITests.m; sourceTree = "<group>"; };
 		090BEE89261C211B009D59C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090BEEB2261C2246009D59C8 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = "03-RecordAudio/lib/libavutil.a"; sourceTree = "<group>"; };
+		090BEEB3261C2246009D59C8 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = "03-RecordAudio/lib/libavformat.a"; sourceTree = "<group>"; };
+		090BEEB4261C2246009D59C8 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = "03-RecordAudio/lib/libswscale.a"; sourceTree = "<group>"; };
+		090BEEB5261C2246009D59C8 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = "03-RecordAudio/lib/libavcodec.a"; sourceTree = "<group>"; };
+		090BEEB6261C2246009D59C8 /* libpostproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpostproc.a; path = "03-RecordAudio/lib/libpostproc.a"; sourceTree = "<group>"; };
+		090BEEB7261C2246009D59C8 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = "03-RecordAudio/lib/libswresample.a"; sourceTree = "<group>"; };
+		090BEEB8261C2246009D59C8 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = "03-RecordAudio/lib/libavfilter.a"; sourceTree = "<group>"; };
+		090BEEB9261C2246009D59C8 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = "03-RecordAudio/lib/libavdevice.a"; sourceTree = "<group>"; };
+		090BEEBA261C2246009D59C8 /* libavresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavresample.a; path = "03-RecordAudio/lib/libavresample.a"; sourceTree = "<group>"; };
+		09EF7AA226297233004C28DE /* ZYPlayAudioMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYPlayAudioMgr.h; sourceTree = "<group>"; };
+		09EF7AA326297233004C28DE /* ZYPlayAudioMgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYPlayAudioMgr.mm; sourceTree = "<group>"; };
+		09EF7ACA26297699004C28DE /* libSDL2_test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_test.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.9/lib/libSDL2_test.a; sourceTree = "<group>"; };
+		09EF7ACB26297699004C28DE /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.9/lib/libSDL2.a; sourceTree = "<group>"; };
+		09EF7ACC26297699004C28DE /* libSDL2main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2main.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.9/lib/libSDL2main.a; sourceTree = "<group>"; };
+		09F74E5D26255A0300CF82DA /* ZYRecordAudioMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYRecordAudioMgr.h; sourceTree = "<group>"; };
+		09F74E5E26255A0300CF82DA /* ZYRecordAudioMgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYRecordAudioMgr.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +87,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090BEEC2261C2257009D59C8 /* libswresample.a in Frameworks */,
+				090BEEC0261C2257009D59C8 /* libavutil.a in Frameworks */,
+				09EF7ACD2629769B004C28DE /* libSDL2_test.a in Frameworks */,
+				090BEEC1261C2257009D59C8 /* libpostproc.a in Frameworks */,
+				090BEEBD261C2257009D59C8 /* libavfilter.a in Frameworks */,
+				09EF7ACF2629769B004C28DE /* libSDL2main.a in Frameworks */,
+				090BEEBC261C2257009D59C8 /* libavdevice.a in Frameworks */,
+				090BEEBB261C2257009D59C8 /* libavcodec.a in Frameworks */,
+				090BEEC3261C2257009D59C8 /* libswscale.a in Frameworks */,
+				090BEEBE261C2257009D59C8 /* libavformat.a in Frameworks */,
+				090BEEBF261C2257009D59C8 /* libavresample.a in Frameworks */,
+				09EF7ACE2629769B004C28DE /* libSDL2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +126,7 @@
 				090BEE7B261C211B009D59C8 /* 03-RecordAudioTests */,
 				090BEE86261C211B009D59C8 /* 03-RecordAudioUITests */,
 				090BEE63261C2119009D59C8 /* Products */,
+				090BEE98261C21A9009D59C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,14 +143,18 @@
 		090BEE64261C2119009D59C8 /* 03-RecordAudio */ = {
 			isa = PBXGroup;
 			children = (
+				09F74E5D26255A0300CF82DA /* ZYRecordAudioMgr.h */,
+				09F74E5E26255A0300CF82DA /* ZYRecordAudioMgr.mm */,
+				09EF7AA226297233004C28DE /* ZYPlayAudioMgr.h */,
+				09EF7AA326297233004C28DE /* ZYPlayAudioMgr.mm */,
 				090BEE65261C2119009D59C8 /* AppDelegate.h */,
 				090BEE66261C2119009D59C8 /* AppDelegate.m */,
 				090BEE68261C2119009D59C8 /* ViewController.h */,
-				090BEE69261C2119009D59C8 /* ViewController.m */,
+				090BEE69261C2119009D59C8 /* ViewController.mm */,
 				090BEE6B261C211B009D59C8 /* Assets.xcassets */,
 				090BEE6D261C211B009D59C8 /* Main.storyboard */,
 				090BEE70261C211B009D59C8 /* Info.plist */,
-				090BEE71261C211B009D59C8 /* main.m */,
+				090BEE71261C211B009D59C8 /* main.mm */,
 				090BEE73261C211B009D59C8 /* _3_RecordAudio.entitlements */,
 			);
 			path = "03-RecordAudio";
@@ -129,6 +176,25 @@
 				090BEE89261C211B009D59C8 /* Info.plist */,
 			);
 			path = "03-RecordAudioUITests";
+			sourceTree = "<group>";
+		};
+		090BEE98261C21A9009D59C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09EF7ACA26297699004C28DE /* libSDL2_test.a */,
+				09EF7ACB26297699004C28DE /* libSDL2.a */,
+				09EF7ACC26297699004C28DE /* libSDL2main.a */,
+				090BEEB5261C2246009D59C8 /* libavcodec.a */,
+				090BEEB9261C2246009D59C8 /* libavdevice.a */,
+				090BEEB8261C2246009D59C8 /* libavfilter.a */,
+				090BEEB3261C2246009D59C8 /* libavformat.a */,
+				090BEEBA261C2246009D59C8 /* libavresample.a */,
+				090BEEB2261C2246009D59C8 /* libavutil.a */,
+				090BEEB6261C2246009D59C8 /* libpostproc.a */,
+				090BEEB7261C2246009D59C8 /* libswresample.a */,
+				090BEEB4261C2246009D59C8 /* libswscale.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				090BEE6A261C2119009D59C8 /* ViewController.m in Sources */,
-				090BEE72261C211B009D59C8 /* main.m in Sources */,
+				09EF7AA426297233004C28DE /* ZYPlayAudioMgr.mm in Sources */,
+				090BEE6A261C2119009D59C8 /* ViewController.mm in Sources */,
+				090BEE72261C211B009D59C8 /* main.mm in Sources */,
+				09F74E5F26255A0300CF82DA /* ZYRecordAudioMgr.mm in Sources */,
 				090BEE67261C2119009D59C8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,11 +497,22 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T6FCKHRT95;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/Cellar/ffmpeg/4.3.1_9/include/**",
+					"/usr/local/Cellar/sdl2/2.0.9/include/**",
+				);
 				INFOPLIST_FILE = "03-RecordAudio/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2/2.0.9/lib,
+					/usr/local/Cellar/ffmpeg/4.3.1_9/lib,
+					"$(PROJECT_DIR)/03-RecordAudio/lib",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "xxxx.-3-RecordAudio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -449,11 +528,22 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T6FCKHRT95;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/Cellar/ffmpeg/4.3.1_9/include/**",
+					"/usr/local/Cellar/sdl2/2.0.9/include/**",
+				);
 				INFOPLIST_FILE = "03-RecordAudio/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/ffmpeg/4.3.1_9/lib,
+					"$(PROJECT_DIR)/03-RecordAudio/lib",
+					/usr/local/Cellar/sdl2/2.0.9/lib,
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "xxxx.-3-RecordAudio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
