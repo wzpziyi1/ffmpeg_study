@@ -107,6 +107,9 @@ extern "C" {
                 NSData *data = [NSData dataWithBytes:pkt.data length:pkt.size];
                 [fileHandle writeData:data];
             }
+            else if (code == AVERROR(EAGAIN)){ //临时文件报错
+                continue;
+            }
             else {
                 char errorBuf[1024];
                 av_strerror(code, errorBuf, sizeof(errorBuf));
