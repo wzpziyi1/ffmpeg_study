@@ -16,7 +16,7 @@ extern "C" {
 
 #ifdef TARGET_OS_MAC
     #define kFrameworkName "AVFoundation"
-    #define kDeviceName ":0"
+    #define kDeviceName ":1"
 #elif
     #define kFrameworkName "dshow"
     #define kDeviceName ":0"
@@ -29,7 +29,7 @@ extern "C" {
 @property (nonatomic, strong) dispatch_queue_t serial_queue;
 
 
-@property (nonatomic, assign) BOOL isStop;
+@property (atomic, assign) BOOL isStop;
 @end
 
 @implementation ZYRecordAudioMgr

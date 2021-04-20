@@ -7,9 +7,11 @@
 
 #import "ViewController.h"
 #import "ZYRecordAudioMgr.h"
+#import "ZYPlayAudioMgr.h"
 
 @interface ViewController()
-@property (nonatomic, strong) ZYRecordAudioMgr *recordAudio;
+@property (nonatomic, strong) ZYRecordAudioMgr *recordMgr;
+@property (nonatomic, strong) ZYPlayAudioMgr *playMgr;
 @end
 
 @implementation ViewController
@@ -20,18 +22,40 @@
 
     // Do any additional setup after loading the view.
     
-    self.recordAudio = [[ZYRecordAudioMgr alloc] init];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willClose:) name:NSWindowWillCloseNotification object:nil];
+    
+    self.recordMgr = [[ZYRecordAudioMgr alloc] init];
+    self.playMgr = [[ZYPlayAudioMgr alloc] init];
 }
 
-- (IBAction)clickRecordAudioBtn:(NSButton *)sender {
-    if ([self.recordAudio isRecording]) {
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (IBAction)clickRecordAudioBtn:(NSButton *)sender
+{
+    if ([self.recordMgr isRecording]) {
         [sender setTitle:@"开始录音"];
-        [self.recordAudio stopRecord];
+        [self.recordMgr stopRecord];
     }
     else {
         [sender setTitle:@"停止录音"];
-        [self.recordAudio startRecordWithFailBlock:^{
+        [self.recordMgr startRecordWithFailBlock:^{
             [sender setTitle:@"开始录音"];
+        }];
+    }
+}
+- (IBAction)clickPlayAudioBth:(id)sender
+{
+    if ([self.playMgr isPlaying]) {
+        [sender setTitle:@"开始播放"];
+        [self.playMgr stopPlayAudio];
+    }
+    else {
+        [sender setTitle:@"停止播放"];
+        [self.playMgr playAudioWithCallback:^{
+            [sender setTitle:@"开始播放"];
         }];
     }
 }
@@ -43,6 +67,15 @@
 }
 
 
+- (void)willClose:(NSNotification *)notification
+{
 
-
+    NSLog(@"窗口关闭");
+    [self.recordMgr stopRecord];
+    [self.playMgr stopPlayAudio];
+    [NSThread sleepForTimeInterval:0.25];
+    [[NSApplication sharedApplication] terminate:nil];
+    //退出程序
+//    exit(0);
+}
 @end
