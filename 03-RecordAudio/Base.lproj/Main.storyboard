@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -711,7 +711,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cd2-ow-6FO">
-                                <rect key="frame" x="94" y="138" width="112" height="36"/>
+                                <rect key="frame" x="93" y="138" width="114" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="B2U-2h-cxH"/>
                                     <constraint firstAttribute="height" constant="25" id="ge3-QO-WHh"/>
@@ -724,10 +724,26 @@
                                     <action selector="clickRecordAudioBtn:" target="XfG-lQ-9wD" id="4nG-Ty-U6Y"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0DL-Tc-cxV">
+                                <rect key="frame" x="92" y="93" width="114" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="970-XO-n3R"/>
+                                    <constraint firstAttribute="width" constant="100" id="kL0-9r-ncR"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="开始播放" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b2P-sh-8Nh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clickPlayAudioBth:" target="XfG-lQ-9wD" id="m8c-iT-Zs8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Cd2-ow-6FO" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="100" id="ZZ1-zR-yhp"/>
+                            <constraint firstItem="0DL-Tc-cxV" firstAttribute="top" secondItem="Cd2-ow-6FO" secondAttribute="bottom" constant="20" id="lt2-Fn-2Ra"/>
                             <constraint firstItem="Cd2-ow-6FO" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="100" id="o4r-7I-9a3"/>
+                            <constraint firstItem="0DL-Tc-cxV" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="99" id="zXW-d4-6ZW"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -76,6 +76,7 @@
 		0987EEBF262DC47400926D6E /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = ../../../usr/local/Cellar/ffmpeg/4.3.2_4/lib/libavfilter.a; sourceTree = "<group>"; };
 		0987EEC0262DC47400926D6E /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = ../../../usr/local/Cellar/ffmpeg/4.3.2_4/lib/libavdevice.a; sourceTree = "<group>"; };
 		0987EEC1262DC47400926D6E /* libavresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavresample.a; path = ../../../usr/local/Cellar/ffmpeg/4.3.2_4/lib/libavresample.a; sourceTree = "<group>"; };
+		09C63A6A262F386A00841DC5 /* CoreMediaIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMediaIO.framework; path = System/Library/Frameworks/CoreMediaIO.framework; sourceTree = SDKROOT; };
 		09EF7AA226297233004C28DE /* ZYPlayAudioMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYPlayAudioMgr.h; sourceTree = "<group>"; };
 		09EF7AA326297233004C28DE /* ZYPlayAudioMgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYPlayAudioMgr.mm; sourceTree = "<group>"; };
 		09F74E5D26255A0300CF82DA /* ZYRecordAudioMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYRecordAudioMgr.h; sourceTree = "<group>"; };
@@ -181,6 +182,7 @@
 		090BEE98261C21A9009D59C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09C63A6A262F386A00841DC5 /* CoreMediaIO.framework */,
 				0987EEBD262DC47400926D6E /* libavcodec.a */,
 				0987EEC0262DC47400926D6E /* libavdevice.a */,
 				0987EEBF262DC47400926D6E /* libavfilter.a */,

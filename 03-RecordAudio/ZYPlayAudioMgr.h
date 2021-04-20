@@ -9,5 +9,9 @@
 
 
 @interface ZYPlayAudioMgr : NSObject
+@property(atomic, assign, readonly) BOOL isPlaying;
 - (void)sdlVersion;
+- (void)playAudioWithCallback:(void(^)(void))callback;
+
+- (void)stopPlayAudio;
 @end
