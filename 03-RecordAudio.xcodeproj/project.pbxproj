@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0904A16D263465FB00E721C3 /* AudioConver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0904A16C263465FB00E721C3 /* AudioConver.cpp */; };
+		0904A1732634662000E721C3 /* ZYAudioConverMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0904A1722634662000E721C3 /* ZYAudioConverMgr.mm */; };
 		090BEE67261C2119009D59C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE66261C2119009D59C8 /* AppDelegate.m */; };
 		090BEE6A261C2119009D59C8 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE69261C2119009D59C8 /* ViewController.mm */; };
 		090BEE6C261C211B009D59C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090BEE6B261C211B009D59C8 /* Assets.xcassets */; };
@@ -50,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0904A16B263465FB00E721C3 /* AudioConver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AudioConver.hpp; path = "03-RecordAudio/AudioConver.hpp"; sourceTree = SOURCE_ROOT; };
+		0904A16C263465FB00E721C3 /* AudioConver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioConver.cpp; path = "03-RecordAudio/AudioConver.cpp"; sourceTree = SOURCE_ROOT; };
+		0904A1712634662000E721C3 /* ZYAudioConverMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYAudioConverMgr.h; sourceTree = "<group>"; };
+		0904A1722634662000E721C3 /* ZYAudioConverMgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYAudioConverMgr.mm; sourceTree = "<group>"; };
 		090BEE62261C2119009D59C8 /* 03-RecordAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-RecordAudio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		090BEE65261C2119009D59C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		090BEE66261C2119009D59C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -206,10 +212,12 @@
 		097BCC4426358EED007079F3 /* OC */ = {
 			isa = PBXGroup;
 			children = (
-				097BCC4826358EED007079F3 /* ZYPlayAudioMgr.h */,
-				097BCC4726358EED007079F3 /* ZYPlayAudioMgr.mm */,
-				097BCC4526358EED007079F3 /* ZYRecordAudioMgr.h */,
-				097BCC4626358EED007079F3 /* ZYRecordAudioMgr.mm */,
+				0904A1712634662000E721C3 /* ZYAudioConverMgr.h */,
+				0904A1722634662000E721C3 /* ZYAudioConverMgr.mm */,
+				09C63A8F2631D00500841DC5 /* ZYPlayAudioMgr.h */,
+				09C63A8E2631D00500841DC5 /* ZYPlayAudioMgr.mm */,
+				09C63A8C2631D00500841DC5 /* ZYRecordAudioMgr.h */,
+				09C63A8D2631D00500841DC5 /* ZYRecordAudioMgr.mm */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -217,8 +225,10 @@
 		097BCC4E26358F5E007079F3 /* CPlusPlus */ = {
 			isa = PBXGroup;
 			children = (
-				097BCC4F26358F5E007079F3 /* RecordAudio.cpp */,
-				097BCC5026358F5E007079F3 /* RecordAudio.hpp */,
+				0904A16C263465FB00E721C3 /* AudioConver.cpp */,
+				0904A16B263465FB00E721C3 /* AudioConver.hpp */,
+				09C63A962631D05700841DC5 /* RecordAudio.cpp */,
+				09C63A972631D05700841DC5 /* RecordAudio.hpp */,
 			);
 			path = CPlusPlus;
 			sourceTree = "<group>";
@@ -356,6 +366,7 @@
 				09A46B9726328AFF001DD357 /* AudioConver.cpp in Sources */,
 				097BCC4926358EED007079F3 /* ZYRecordAudioMgr.mm in Sources */,
 				097BCC4A26358EED007079F3 /* ZYPlayAudioMgr.mm in Sources */,
+				0904A1732634662000E721C3 /* ZYAudioConverMgr.mm in Sources */,
 				090BEE67261C2119009D59C8 /* AppDelegate.m in Sources */,
 				097BCC5126358F5E007079F3 /* RecordAudio.cpp in Sources */,
 			);

@@ -711,7 +711,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cd2-ow-6FO">
-                                <rect key="frame" x="93" y="138" width="114" height="37"/>
+                                <rect key="frame" x="93" y="188" width="114" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="B2U-2h-cxH"/>
                                     <constraint firstAttribute="height" constant="25" id="ge3-QO-WHh"/>
@@ -725,24 +725,40 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0DL-Tc-cxV">
-                                <rect key="frame" x="92" y="93" width="114" height="37"/>
+                                <rect key="frame" x="92" y="143" width="114" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="970-XO-n3R"/>
                                     <constraint firstAttribute="width" constant="100" id="kL0-9r-ncR"/>
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="开始播放" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b2P-sh-8Nh">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="clickPlayAudioBth:" target="XfG-lQ-9wD" id="m8c-iT-Zs8"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6fb-9g-bc9">
+                                <rect key="frame" x="93" y="93" width="114" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="38B-9W-UZs"/>
+                                    <constraint firstAttribute="height" constant="25" id="USe-7o-xx7"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="pcm转wav" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4n8-cs-tZs">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clickPcmConverWavBtn:" target="XfG-lQ-9wD" id="PzB-1U-ygs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="6fb-9g-bc9" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="100" id="JP4-b3-x9I"/>
                             <constraint firstItem="Cd2-ow-6FO" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="100" id="ZZ1-zR-yhp"/>
+                            <constraint firstItem="6fb-9g-bc9" firstAttribute="top" secondItem="0DL-Tc-cxV" secondAttribute="bottom" constant="25" id="eYA-p4-yUG"/>
                             <constraint firstItem="0DL-Tc-cxV" firstAttribute="top" secondItem="Cd2-ow-6FO" secondAttribute="bottom" constant="20" id="lt2-Fn-2Ra"/>
-                            <constraint firstItem="Cd2-ow-6FO" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="100" id="o4r-7I-9a3"/>
+                            <constraint firstItem="Cd2-ow-6FO" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="50" id="o4r-7I-9a3"/>
                             <constraint firstItem="0DL-Tc-cxV" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="99" id="zXW-d4-6ZW"/>
                         </constraints>
                     </view>
