@@ -8,10 +8,12 @@
 #import "ViewController.h"
 #import "ZYRecordAudioMgr.h"
 #import "ZYPlayAudioMgr.h"
+#import "ZYAudioConverMgr.h"
 
 @interface ViewController()
 @property (nonatomic, strong) ZYRecordAudioMgr *recordMgr;
 @property (nonatomic, strong) ZYPlayAudioMgr *playMgr;
+@property (nonatomic, strong) ZYAudioConverMgr *converMgr;
 @end
 
 @implementation ViewController
@@ -26,6 +28,7 @@
     
     self.recordMgr = [[ZYRecordAudioMgr alloc] init];
     self.playMgr = [[ZYPlayAudioMgr alloc] init];
+    self.converMgr = [[ZYAudioConverMgr alloc] init];
 }
 
 - (void)dealloc
@@ -58,6 +61,11 @@
             [sender setTitle:@"开始播放"];
         }];
     }
+}
+
+- (IBAction)clickPcmConverWavBtn:(id)sender {
+    ZYWAVHeader wavHeader;
+//    wavHeader.audioFormat = 
 }
 
 - (void)setRepresentedObject:(id)representedObject {
