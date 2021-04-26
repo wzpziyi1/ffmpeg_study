@@ -16,7 +16,7 @@ extern "C" {
 
 #ifdef TARGET_OS_MAC
     #define kFrameworkName "AVFoundation"
-    #define kDeviceName ":1"
+    #define kDeviceName ":0"
 #elif
     #define kFrameworkName "dshow"
     #define kDeviceName ":0"
@@ -114,8 +114,34 @@ extern "C" {
             }
         }
         [fileHandle closeFile];
+        
+        
+        [self printContextLog:context];
         avformat_close_input(&context);
     });
+}
+
+- (void)printContextLog:(AVFormatContext *)context
+{
+    //streams are created by libavformat in avformat_open_input().
+    //使用avformat_open_input创建一个streams
+    AVStream *stream = context->streams[0];
+    AVCodecParameters *codeParams = stream->codecpar;
+    //采样率
+    NSLog(@"采样率：%d", codeParams->sample_rate);
+    //声道数
+    NSLog(@"声道数：%d", codeParams->channels);
+    //采样格式
+    AVSampleFormat format = (AVSampleFormat)codeParams->format;
+    NSLog(@"采样格式：%d", format);
+    //编码格式，可以看出采样格式,注意，是16进制数
+    NSLog(@"采样格式：0x%lx  0x%lx", codeParams->codec_id, AV_CODEC_ID_PCM_F32LE);
+    
+    //每个sample一个声道所占字节数,Return codec bits per sample.
+    NSLog(@"每个sample所占位数：%d", av_get_bits_per_sample(codeParams->codec_id));
+    
+    //每一个样本的一个声道占用多少个字节
+    NSLog(@"每个sample所占字节数：%d", av_get_bytes_per_sample((AVSampleFormat)codeParams->format));
 }
 
 - (void)stopRecord
