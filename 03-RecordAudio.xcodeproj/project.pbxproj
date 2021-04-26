@@ -25,6 +25,7 @@
 		090BEEC3261C2257009D59C8 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 090BEEB4261C2246009D59C8 /* libswscale.a */; };
 		097BCC4926358EED007079F3 /* ZYRecordAudioMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 097BCC4626358EED007079F3 /* ZYRecordAudioMgr.mm */; };
 		097BCC4A26358EED007079F3 /* ZYPlayAudioMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 097BCC4726358EED007079F3 /* ZYPlayAudioMgr.mm */; };
+		097BCC5126358F5E007079F3 /* RecordAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 097BCC4F26358F5E007079F3 /* RecordAudio.cpp */; };
 		09A46B9726328AFF001DD357 /* AudioConver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09A46B9526328AFF001DD357 /* AudioConver.cpp */; };
 		09EF7ACD2629769B004C28DE /* libSDL2_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF7ACA26297699004C28DE /* libSDL2_test.a */; };
 		09EF7ACE2629769B004C28DE /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF7ACB26297699004C28DE /* libSDL2.a */; };
@@ -78,6 +79,8 @@
 		097BCC4626358EED007079F3 /* ZYRecordAudioMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYRecordAudioMgr.mm; sourceTree = "<group>"; };
 		097BCC4726358EED007079F3 /* ZYPlayAudioMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYPlayAudioMgr.mm; sourceTree = "<group>"; };
 		097BCC4826358EED007079F3 /* ZYPlayAudioMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPlayAudioMgr.h; sourceTree = "<group>"; };
+		097BCC4F26358F5E007079F3 /* RecordAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecordAudio.cpp; sourceTree = "<group>"; };
+		097BCC5026358F5E007079F3 /* RecordAudio.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RecordAudio.hpp; sourceTree = "<group>"; };
 		09A46B9526328AFF001DD357 /* AudioConver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioConver.cpp; sourceTree = "<group>"; };
 		09A46B9626328AFF001DD357 /* AudioConver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AudioConver.hpp; sourceTree = "<group>"; };
 		09EF7ACA26297699004C28DE /* libSDL2_test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_test.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.9/lib/libSDL2_test.a; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 		090BEE64261C2119009D59C8 /* 03-RecordAudio */ = {
 			isa = PBXGroup;
 			children = (
+				097BCC4E26358F5E007079F3 /* CPlusPlus */,
 				097BCC4426358EED007079F3 /* OC */,
 				090BEE65261C2119009D59C8 /* AppDelegate.h */,
 				090BEE66261C2119009D59C8 /* AppDelegate.m */,
@@ -202,12 +206,21 @@
 		097BCC4426358EED007079F3 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				097BCC4826358EED007079F3 /* ZYPlayAudioMgr.h */,
+				097BCC4726358EED007079F3 /* ZYPlayAudioMgr.mm */,
 				097BCC4526358EED007079F3 /* ZYRecordAudioMgr.h */,
 				097BCC4626358EED007079F3 /* ZYRecordAudioMgr.mm */,
-				097BCC4726358EED007079F3 /* ZYPlayAudioMgr.mm */,
-				097BCC4826358EED007079F3 /* ZYPlayAudioMgr.h */,
 			);
 			path = OC;
+			sourceTree = "<group>";
+		};
+		097BCC4E26358F5E007079F3 /* CPlusPlus */ = {
+			isa = PBXGroup;
+			children = (
+				097BCC4F26358F5E007079F3 /* RecordAudio.cpp */,
+				097BCC5026358F5E007079F3 /* RecordAudio.hpp */,
+			);
+			path = CPlusPlus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +357,7 @@
 				097BCC4926358EED007079F3 /* ZYRecordAudioMgr.mm in Sources */,
 				097BCC4A26358EED007079F3 /* ZYPlayAudioMgr.mm in Sources */,
 				090BEE67261C2119009D59C8 /* AppDelegate.m in Sources */,
+				097BCC5126358F5E007079F3 /* RecordAudio.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,8 +526,8 @@
 				DEVELOPMENT_TEAM = T6FCKHRT95;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
-					"/usr/local/Cellar/ffmpeg/4.3.1_9/include/**",
-					"/usr/local/Cellar/sdl2/2.0.9/include/**",
+					/usr/local/Cellar/ffmpeg/4.3.1_9/include,
+					/usr/local/Cellar/sdl2/2.0.9/include,
 				);
 				INFOPLIST_FILE = "03-RecordAudio/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
