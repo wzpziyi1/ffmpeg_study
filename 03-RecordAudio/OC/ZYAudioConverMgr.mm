@@ -7,13 +7,20 @@
 
 #import "ZYAudioConverMgr.h"
 
+extern "C" {
+#import <libavcodec/avcodec.h>
+#import <libavformat/avformat.h>
+}
+
 @implementation ZYAudioConverMgr
-- (void)pcmToWavWithPath:(nonnull NSString *)pcmPath
++ (void)pcmToWavWithPath:(nonnull NSString *)pcmPath
                  wavPath:(nonnull NSString *)wavPath
                wavHeader:(nonnull ZYWAVHeader *)wavHeader
                 callback:(nonnull void(^)(BOOL isSuccess))callback
 {
-    
+    wavHeader->blockAlign = av_get_bytes_per_sample((AVSampleFormat)wavHeader->audioFormat) * wavHeader->numChannels;
+    wavHeader->bitsPreSample = wavHeader->blockAlign << 3;
+    wavHeader->byteRate = wavHeader->sampleRate * wavHeader->blockAlign;
     NSFileManager *fileMgr = [NSFileManager defaultManager];
     if ([fileMgr fileExistsAtPath:pcmPath]) {
         NSLog(@"%s pcm not exists", __func__);

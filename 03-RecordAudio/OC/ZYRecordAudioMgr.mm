@@ -6,6 +6,7 @@
 //
 
 #import "ZYRecordAudioMgr.h"
+#import "ZYAudioConverMgr.h"
 
 extern "C" {
 #import <libavdevice/avdevice.h>
@@ -23,6 +24,7 @@ extern "C" {
 #endif
 
 #define kAudioPath @"/Users/wzp/Downloads/xxxxx.pcm"
+#define kWavAudioPath @"/Users/wzp/Downloads/xxxxx.wav"
 
 
 @interface ZYRecordAudioMgr()
@@ -121,8 +123,19 @@ void freep(void **p)
         }
         [fileHandle closeFile];
         
-        
         [self printContextLog:context];
+        AVStream *stream = context->streams[0];
+        AVCodecParameters *codeParams = stream->codecpar;
+        ZYWAVHeader header;
+        header.sampleRate = codeParams->sample_rate;
+        header.numChannels = codeParams->channels;
+        header.audioFormat = AudioFormatPCM;
+        if (codeParams->codec_id >= AV_CODEC_ID_PCM_F32BE && codeParams->codec_id <= AV_CODEC_ID_PCM_F64LE) {
+            header.audioFormat = AudioFormatFloat;
+        }
+        [ZYAudioConverMgr pcmToWavWithPath:kAudioPath wavPath:kWavAudioPath wavHeader:&header callback:^(BOOL isSuccess){
+            NSLog(@"pcm cover to wav success:%d", isSuccess);
+        }];
         avformat_close_input(&context);
         
 //        void *p = malloc(sizeof(int));
