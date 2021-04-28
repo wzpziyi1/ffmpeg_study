@@ -6,7 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+typedef NS_ENUM(NSInteger, AudioFormatType) {
+    AudioFormatPCM = 1,
+    AudioFormatFloat = 3
+};
 typedef struct {
     u_int8_t riffChunkId[4] = {'R', 'I', 'F', 'F'};
     u_int32_t riffChunkSize;
@@ -14,12 +17,12 @@ typedef struct {
     u_int8_t fmtChunkId[4] = {'f', 'm', 't', ' '};
     //fmt chunk的data大小：存储PCM数据时，是16
     u_int32_t fmtChunkSize = 16;
-    //音频编码，1表示PCM，3表示Floating Point
+    //音频编码，1表示PCM，3表示Floating Point；AVSampleFormat里面
     u_int16_t audioFormat = 1;
     u_int16_t numChannels;
     u_int32_t sampleRate;
     u_int32_t byteRate;
-    //一个样本占多少字节
+    //一个样本占多少字节，考虑单双声道
     u_int16_t blockAlign;
     //位深度
     u_int16_t bitsPreSample;
@@ -30,7 +33,7 @@ typedef struct {
 
 
 @interface ZYAudioConverMgr : NSObject
-- (void)pcmToWavWithPath:(nonnull NSString *)pcmPath
++ (void)pcmToWavWithPath:(nonnull NSString *)pcmPath
                  wavPath:(nonnull NSString *)wavPath
                wavHeader:(nonnull ZYWAVHeader *)wavHeader
                 callback:(nonnull void(^)(BOOL isSuccess))callback;
