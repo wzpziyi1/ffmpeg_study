@@ -47,6 +47,12 @@ extern "C" {
     return self;
 }
 
+void freep(void **p)
+{
+    free(*p);
+    *p = nullptr;
+}
+
 - (void)startRecordWithFailBlock:(void(^)(void))failBlock
 {
     
@@ -118,6 +124,9 @@ extern "C" {
         
         [self printContextLog:context];
         avformat_close_input(&context);
+        
+//        void *p = malloc(sizeof(int));
+//        freep(&p);
     });
 }
 
