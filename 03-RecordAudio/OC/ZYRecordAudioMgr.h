@@ -12,7 +12,15 @@
 
 #pragma mark - record audio
 - (BOOL)isRecording;
-- (void)startRecordWithFailBlock:(void(^)(void))failBlock;
+
+/// pcm录音
+/// @param failBlock callback
+- (void)startPCMRecordWithFailBlock:(void(^)(void))failBlock;
+
+
+/// wav录音
+/// @param failBlock callback
+- (void)startWACRecordWithFailBlock:(void(^)(void))failBlock;
 - (void)stopRecord;
 
 @end

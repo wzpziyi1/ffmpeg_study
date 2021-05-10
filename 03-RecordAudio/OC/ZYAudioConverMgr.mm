@@ -18,8 +18,7 @@ extern "C" {
                wavHeader:(nonnull ZYWAVHeader *)wavHeader
                 callback:(nonnull void(^)(BOOL isSuccess))callback
 {
-    wavHeader->blockAlign = av_get_bytes_per_sample((AVSampleFormat)wavHeader->audioFormat) * wavHeader->numChannels;
-    wavHeader->bitsPreSample = wavHeader->blockAlign << 3;
+    wavHeader->blockAlign = wavHeader->bitsPreSample * wavHeader->numChannels << 3;
     wavHeader->byteRate = wavHeader->sampleRate * wavHeader->blockAlign;
     NSFileManager *fileMgr = [NSFileManager defaultManager];
     if ([fileMgr fileExistsAtPath:pcmPath]) {

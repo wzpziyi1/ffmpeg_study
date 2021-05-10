@@ -44,7 +44,7 @@
     }
     else {
         [sender setTitle:@"停止录音"];
-        [self.recordMgr startRecordWithFailBlock:^{
+        [self.recordMgr startPCMRecordWithFailBlock:^{
             [sender setTitle:@"开始录音"];
         }];
     }
