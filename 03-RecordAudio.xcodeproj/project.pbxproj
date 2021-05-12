@@ -29,6 +29,7 @@
 		09609ED5263C04BC005E635F /* ZYAudioConverMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09609ECF263C04BC005E635F /* ZYAudioConverMgr.mm */; };
 		09609ED6263C04BC005E635F /* ZYPlayPCMMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09609ED0263C04BC005E635F /* ZYPlayPCMMgr.mm */; };
 		09A46B9726328AFF001DD357 /* AudioConver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09A46B9526328AFF001DD357 /* AudioConver.cpp */; };
+		09C52EA7264BC2A9007A00D6 /* ZYPlayWavMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09C52EA6264BC2A9007A00D6 /* ZYPlayWavMgr.mm */; };
 		09EF7ACD2629769B004C28DE /* libSDL2_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF7ACA26297699004C28DE /* libSDL2_test.a */; };
 		09EF7ACE2629769B004C28DE /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF7ACB26297699004C28DE /* libSDL2.a */; };
 		09EF7ACF2629769B004C28DE /* libSDL2main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF7ACC26297699004C28DE /* libSDL2main.a */; };
@@ -92,6 +93,8 @@
 		097BCC4F26358F5E007079F3 /* RecordAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecordAudio.cpp; sourceTree = "<group>"; };
 		09A46B9526328AFF001DD357 /* AudioConver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioConver.cpp; sourceTree = "<group>"; };
 		09A46B9626328AFF001DD357 /* AudioConver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AudioConver.hpp; sourceTree = "<group>"; };
+		09C52EA5264BC2A9007A00D6 /* ZYPlayWavMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYPlayWavMgr.h; sourceTree = "<group>"; };
+		09C52EA6264BC2A9007A00D6 /* ZYPlayWavMgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYPlayWavMgr.mm; sourceTree = "<group>"; };
 		09EF7ACA26297699004C28DE /* libSDL2_test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_test.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.9/lib/libSDL2_test.a; sourceTree = "<group>"; };
 		09EF7ACB26297699004C28DE /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.9/lib/libSDL2.a; sourceTree = "<group>"; };
 		09EF7ACC26297699004C28DE /* libSDL2main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2main.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.9/lib/libSDL2main.a; sourceTree = "<group>"; };
@@ -239,6 +242,8 @@
 				09609ECF263C04BC005E635F /* ZYAudioConverMgr.mm */,
 				09609ED1263C04BC005E635F /* ZYPlayPCMMgr.h */,
 				09609ED0263C04BC005E635F /* ZYPlayPCMMgr.mm */,
+				09C52EA5264BC2A9007A00D6 /* ZYPlayWavMgr.h */,
+				09C52EA6264BC2A9007A00D6 /* ZYPlayWavMgr.mm */,
 				09609ECA263C04BC005E635F /* ZYRecordAudioMgr.h */,
 				09609ECD263C04BC005E635F /* ZYRecordAudioMgr.mm */,
 				09609ECC263C04BC005E635F /* ZYReSampleMgr.h */,
@@ -379,6 +384,7 @@
 				09609ED2263C04BC005E635F /* RecordAudio.cpp in Sources */,
 				090BEE72261C211B009D59C8 /* main.mm in Sources */,
 				09609ED4263C04BC005E635F /* ZYRecordAudioMgr.mm in Sources */,
+				09C52EA7264BC2A9007A00D6 /* ZYPlayWavMgr.mm in Sources */,
 				09A46B9726328AFF001DD357 /* AudioConver.cpp in Sources */,
 				090BEE67261C2119009D59C8 /* AppDelegate.m in Sources */,
 				09609ED3263C04BC005E635F /* ZYReSampleMgr.mm in Sources */,
