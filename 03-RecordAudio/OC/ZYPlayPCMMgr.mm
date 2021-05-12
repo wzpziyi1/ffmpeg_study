@@ -1,11 +1,11 @@
 //
-//  ZYPlayAudioMgr.m
+//  ZYPlayPCMMgr.m
 //  03-RecordAudio
 //
 //  Created by wzp on 2021/4/16.
 //
 
-#import "ZYPlayAudioMgr.h"
+#import "ZYPlayPCMMgr.h"
 
 extern "C" {
 #import <SDL2/SDL.h>
@@ -35,11 +35,11 @@ typedef struct {
     Uint8 *data = nullptr;
 }AudioBuffer;
 
-@interface ZYPlayAudioMgr()
+@interface ZYPlayPCMMgr()
 @property(atomic, assign, readwrite) BOOL isPlaying;
 @end
 
-@implementation ZYPlayAudioMgr
+@implementation ZYPlayPCMMgr
 
 - (instancetype)init
 {
