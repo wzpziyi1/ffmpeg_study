@@ -108,12 +108,27 @@ void freep(void **p)
         
         NSFileHandle *fileHandle = [NSFileHandle fileHandleForWritingAtPath:path];
         AVPacket pkt;
+        //总数据量
+        NSInteger totalBytes = 0;
+        NSInteger sampleRate = context->streams[0]->codecpar->sample_rate;
+        NSInteger bitsPreSample = av_get_bits_per_sample(context->streams[0]->codecpar->codec_id);
+        NSInteger channels = context->streams[0]->codecpar->channels;
+        //每秒钟录音数据
+        NSInteger bytesPerSec = sampleRate * bitsPreSample * channels >> 3;
+        
         while (!self.isStop) {
             //读取pkt
             code = av_read_frame(context, &pkt);
             if (code == 0) {
                 NSData *data = [NSData dataWithBytes:pkt.data length:pkt.size];
                 [fileHandle writeData:data];
+                //需要释放pkt对象
+                av_packet_unref(&pkt);
+                
+                //计算录音时长
+                totalBytes += pkt.size;
+                NSInteger sec = totalBytes * 1.0 / bytesPerSec;
+                NSLog(@"录音时长： %ld", (long)sec);
             }
             else if (code == -1) {  //-1 是临时资源错误，不影响录音
                 continue;
