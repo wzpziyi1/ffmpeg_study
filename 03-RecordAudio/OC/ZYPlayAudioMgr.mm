@@ -14,7 +14,7 @@ extern "C" {
 #define kAudioPath @"/Users/wzp/Downloads/xxxxx.pcm"
 
 #define kSampleRate 48000
-#define kChannelCount 2
+#define kChannelCount 1
 
 #define kSampleFormat AUDIO_F32LSB
 //位深度

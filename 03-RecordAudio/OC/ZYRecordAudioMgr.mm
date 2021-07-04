@@ -16,7 +16,7 @@ extern "C" {
 }
 
 #ifdef TARGET_OS_MAC
-    #define kFrameworkName "AVFoundation"
+    #define kFrameworkName "avfoundation"
     #define kDeviceName ":1"
 #elif
     #define kFrameworkName "dshow"
@@ -71,7 +71,13 @@ void freep(void **p)
         // 1、获取、打开 输入设备
         AVFormatContext *context = nullptr;
         AVInputFormat *format = av_find_input_format(kFrameworkName);
-        int code = avformat_open_input(&context, kDeviceName, format, nil);
+        if (!format) {
+            NSLog(@"av_find_input_format error");
+            tmpBlock();
+            return;
+            
+        }
+        int code = avformat_open_input(&context, kDeviceName, format, nullptr);
         
         if (code != 0) {
             char errorBuf[1024];
@@ -107,7 +113,7 @@ void freep(void **p)
         }
         
         NSFileHandle *fileHandle = [NSFileHandle fileHandleForWritingAtPath:path];
-        AVPacket pkt;
+        
         //总数据量
         NSInteger totalBytes = 0;
         NSInteger sampleRate = context->streams[0]->codecpar->sample_rate;
@@ -115,20 +121,21 @@ void freep(void **p)
         NSInteger channels = context->streams[0]->codecpar->channels;
         //每秒钟录音数据
         NSInteger bytesPerSec = sampleRate * bitsPreSample * channels >> 3;
-        
+        [self printContextLog:context];
+        AVPacket *pkt = av_packet_alloc();
         while (!self.isStop) {
             //读取pkt
-            code = av_read_frame(context, &pkt);
+            code = av_read_frame(context, pkt);
             if (code == 0) {
-                NSData *data = [NSData dataWithBytes:pkt.data length:pkt.size];
+                if (pkt->size == 0) continue;
+                NSData *data = [NSData dataWithBytes:pkt->data length:pkt->size];
                 [fileHandle writeData:data];
-                //需要释放pkt对象
-                av_packet_unref(&pkt);
-                
                 //计算录音时长
-                totalBytes += pkt.size;
-                NSInteger sec = totalBytes * 1.0 / bytesPerSec;
-                NSLog(@"录音时长： %ld", (long)sec);
+                totalBytes += pkt->size;
+                NSTimeInterval sec = totalBytes * 1.0 / bytesPerSec;
+                NSLog(@"录音时长： %lf", sec);
+                //需要释放pkt对象
+                av_packet_unref(pkt);
             }
             else if (code == AVERROR(EAGAIN)){ //临时文件报错
                 continue;
