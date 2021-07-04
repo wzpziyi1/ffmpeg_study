@@ -6,12 +6,12 @@
 //
 
 #import "ViewController.h"
-#import "ZYRecordAudioMgr.h"
+#import "ZYPlayPCMMgr.h"
 #import "ZYPlayAudioMgr.h"
 #import "ZYAudioConverMgr.h"
 
 @interface ViewController()
-@property (nonatomic, strong) ZYRecordAudioMgr *recordMgr;
+@property (nonatomic, strong) ZYPlayPCMMgr *recordMgr;
 @property (nonatomic, strong) ZYPlayAudioMgr *playMgr;
 @property (nonatomic, strong) ZYAudioConverMgr *converMgr;
 @end
@@ -26,7 +26,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willClose:) name:NSWindowWillCloseNotification object:nil];
     
-    self.recordMgr = [[ZYRecordAudioMgr alloc] init];
+    self.recordMgr = [[ZYPlayPCMMgr alloc] init];
     self.playMgr = [[ZYPlayAudioMgr alloc] init];
     self.converMgr = [[ZYAudioConverMgr alloc] init];
 }
