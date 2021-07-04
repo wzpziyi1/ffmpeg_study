@@ -16,21 +16,27 @@
 		090BEE72261C211B009D59C8 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE71261C211B009D59C8 /* main.mm */; };
 		090BEE7D261C211B009D59C8 /* _3_RecordAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE7C261C211B009D59C8 /* _3_RecordAudioTests.m */; };
 		090BEE88261C211B009D59C8 /* _3_RecordAudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BEE87261C211B009D59C8 /* _3_RecordAudioUITests.m */; };
-		0987EEB6262DC45800926D6E /* libSDL2_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0987EEB4262DC45600926D6E /* libSDL2_test.a */; };
-		0987EEB7262DC45800926D6E /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0987EEB5262DC45600926D6E /* libSDL2.a */; };
-		0987EEB8262DC45800926D6E /* libSDL2main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0987EEB3262DC45600926D6E /* libSDL2main.a */; };
-		0987EEC2262DC47800926D6E /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0987EEBD262DC47400926D6E /* libavcodec.a */; };
-		0987EEC3262DC47800926D6E /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0987EEC0262DC47400926D6E /* libavdevice.a */; };
-		0987EEC4262DC47800926D6E /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0987EEBF262DC47400926D6E /* libavfilter.a */; };
-		0987EEC5262DC47800926D6E /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0987EEBB262DC47400926D6E /* libavformat.a */; };
-		0987EEC6262DC47800926D6E /* libavresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0987EEC1262DC47400926D6E /* libavresample.a */; };
-		0987EEC7262DC47800926D6E /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0987EEB9262DC47400926D6E /* libavutil.a */; };
-		0987EEC8262DC47800926D6E /* libpostproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0987EEBC262DC47400926D6E /* libpostproc.a */; };
-		0987EEC9262DC47800926D6E /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0987EEBE262DC47400926D6E /* libswresample.a */; };
-		0987EECA262DC47800926D6E /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0987EEBA262DC47400926D6E /* libswscale.a */; };
+		09C5846F2690D0E30097547F /* libavcodec.58.134.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C584672690D0E30097547F /* libavcodec.58.134.100.dylib */; };
+		09C584702690D0E30097547F /* libavcodec.58.134.100.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09C584672690D0E30097547F /* libavcodec.58.134.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09C584712690D0E30097547F /* libavdevice.58.13.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C584682690D0E30097547F /* libavdevice.58.13.100.dylib */; };
+		09C584722690D0E30097547F /* libavdevice.58.13.100.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09C584682690D0E30097547F /* libavdevice.58.13.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09C584732690D0E30097547F /* libavformat.58.76.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C584692690D0E30097547F /* libavformat.58.76.100.dylib */; };
+		09C584742690D0E30097547F /* libavformat.58.76.100.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09C584692690D0E30097547F /* libavformat.58.76.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09C584752690D0E30097547F /* libswresample.3.9.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C5846A2690D0E30097547F /* libswresample.3.9.100.dylib */; };
+		09C584762690D0E30097547F /* libswresample.3.9.100.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09C5846A2690D0E30097547F /* libswresample.3.9.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09C584772690D0E30097547F /* libpostproc.55.9.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C5846B2690D0E30097547F /* libpostproc.55.9.100.dylib */; };
+		09C584782690D0E30097547F /* libpostproc.55.9.100.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09C5846B2690D0E30097547F /* libpostproc.55.9.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09C584792690D0E30097547F /* libavutil.56.70.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C5846C2690D0E30097547F /* libavutil.56.70.100.dylib */; };
+		09C5847A2690D0E30097547F /* libavutil.56.70.100.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09C5846C2690D0E30097547F /* libavutil.56.70.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09C5847B2690D0E30097547F /* libavfilter.7.110.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C5846D2690D0E30097547F /* libavfilter.7.110.100.dylib */; };
+		09C5847C2690D0E30097547F /* libavfilter.7.110.100.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09C5846D2690D0E30097547F /* libavfilter.7.110.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09C5847D2690D0E30097547F /* libswscale.5.9.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C5846E2690D0E30097547F /* libswscale.5.9.100.dylib */; };
+		09C5847E2690D0E30097547F /* libswscale.5.9.100.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09C5846E2690D0E30097547F /* libswscale.5.9.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		09C63A912631D00500841DC5 /* ZYRecordAudioMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09C63A8D2631D00500841DC5 /* ZYRecordAudioMgr.mm */; };
 		09C63A922631D00500841DC5 /* ZYPlayAudioMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09C63A8E2631D00500841DC5 /* ZYPlayAudioMgr.mm */; };
 		09C63A982631D05700841DC5 /* RecordAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09C63A962631D05700841DC5 /* RecordAudio.cpp */; };
+		09E608172690C39B000F1922 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E608162690C39B000F1922 /* libSDL2-2.0.0.dylib */; };
+		09E608182690C39B000F1922 /* libSDL2-2.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09E608162690C39B000F1922 /* libSDL2-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,28 @@
 			remoteInfo = "03-RecordAudio";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09EDE2FB268B74830047D9AA /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09C5847A2690D0E30097547F /* libavutil.56.70.100.dylib in Embed Libraries */,
+				09C584722690D0E30097547F /* libavdevice.58.13.100.dylib in Embed Libraries */,
+				09C584742690D0E30097547F /* libavformat.58.76.100.dylib in Embed Libraries */,
+				09E608182690C39B000F1922 /* libSDL2-2.0.0.dylib in Embed Libraries */,
+				09C5847E2690D0E30097547F /* libswscale.5.9.100.dylib in Embed Libraries */,
+				09C584762690D0E30097547F /* libswresample.3.9.100.dylib in Embed Libraries */,
+				09C5847C2690D0E30097547F /* libavfilter.7.110.100.dylib in Embed Libraries */,
+				09C584702690D0E30097547F /* libavcodec.58.134.100.dylib in Embed Libraries */,
+				09C584782690D0E30097547F /* libpostproc.55.9.100.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0904A16B263465FB00E721C3 /* AudioConver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AudioConver.hpp; path = "03-RecordAudio/AudioConver.hpp"; sourceTree = SOURCE_ROOT; };
@@ -71,18 +99,14 @@
 		090BEE83261C211B009D59C8 /* 03-RecordAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-RecordAudioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		090BEE87261C211B009D59C8 /* _3_RecordAudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _3_RecordAudioUITests.m; sourceTree = "<group>"; };
 		090BEE89261C211B009D59C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0987EEB3262DC45600926D6E /* libSDL2main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2main.a; path = ../../../usr/local/Cellar/sdl2/2.0.14_1/lib/libSDL2main.a; sourceTree = "<group>"; };
-		0987EEB4262DC45600926D6E /* libSDL2_test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_test.a; path = ../../../usr/local/Cellar/sdl2/2.0.14_1/lib/libSDL2_test.a; sourceTree = "<group>"; };
-		0987EEB5262DC45600926D6E /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../../../usr/local/Cellar/sdl2/2.0.14_1/lib/libSDL2.a; sourceTree = "<group>"; };
-		0987EEB9262DC47400926D6E /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../usr/local/Cellar/ffmpeg/4.3.2_4/lib/libavutil.a; sourceTree = "<group>"; };
-		0987EEBA262DC47400926D6E /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../../../usr/local/Cellar/ffmpeg/4.3.2_4/lib/libswscale.a; sourceTree = "<group>"; };
-		0987EEBB262DC47400926D6E /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../../../usr/local/Cellar/ffmpeg/4.3.2_4/lib/libavformat.a; sourceTree = "<group>"; };
-		0987EEBC262DC47400926D6E /* libpostproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpostproc.a; path = ../../../usr/local/Cellar/ffmpeg/4.3.2_4/lib/libpostproc.a; sourceTree = "<group>"; };
-		0987EEBD262DC47400926D6E /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../usr/local/Cellar/ffmpeg/4.3.2_4/lib/libavcodec.a; sourceTree = "<group>"; };
-		0987EEBE262DC47400926D6E /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../../../usr/local/Cellar/ffmpeg/4.3.2_4/lib/libswresample.a; sourceTree = "<group>"; };
-		0987EEBF262DC47400926D6E /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = ../../../usr/local/Cellar/ffmpeg/4.3.2_4/lib/libavfilter.a; sourceTree = "<group>"; };
-		0987EEC0262DC47400926D6E /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = ../../../usr/local/Cellar/ffmpeg/4.3.2_4/lib/libavdevice.a; sourceTree = "<group>"; };
-		0987EEC1262DC47400926D6E /* libavresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavresample.a; path = ../../../usr/local/Cellar/ffmpeg/4.3.2_4/lib/libavresample.a; sourceTree = "<group>"; };
+		09C584672690D0E30097547F /* libavcodec.58.134.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.58.134.100.dylib; path = ../../../usr/local/Cellar/ffmpeg/lib/libavcodec.58.134.100.dylib; sourceTree = "<group>"; };
+		09C584682690D0E30097547F /* libavdevice.58.13.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.58.13.100.dylib; path = ../../../usr/local/Cellar/ffmpeg/lib/libavdevice.58.13.100.dylib; sourceTree = "<group>"; };
+		09C584692690D0E30097547F /* libavformat.58.76.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.58.76.100.dylib; path = ../../../usr/local/Cellar/ffmpeg/lib/libavformat.58.76.100.dylib; sourceTree = "<group>"; };
+		09C5846A2690D0E30097547F /* libswresample.3.9.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.3.9.100.dylib; path = ../../../usr/local/Cellar/ffmpeg/lib/libswresample.3.9.100.dylib; sourceTree = "<group>"; };
+		09C5846B2690D0E30097547F /* libpostproc.55.9.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpostproc.55.9.100.dylib; path = ../../../usr/local/Cellar/ffmpeg/lib/libpostproc.55.9.100.dylib; sourceTree = "<group>"; };
+		09C5846C2690D0E30097547F /* libavutil.56.70.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.56.70.100.dylib; path = ../../../usr/local/Cellar/ffmpeg/lib/libavutil.56.70.100.dylib; sourceTree = "<group>"; };
+		09C5846D2690D0E30097547F /* libavfilter.7.110.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavfilter.7.110.100.dylib; path = ../../../usr/local/Cellar/ffmpeg/lib/libavfilter.7.110.100.dylib; sourceTree = "<group>"; };
+		09C5846E2690D0E30097547F /* libswscale.5.9.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.5.9.100.dylib; path = ../../../usr/local/Cellar/ffmpeg/lib/libswscale.5.9.100.dylib; sourceTree = "<group>"; };
 		09C63A6A262F386A00841DC5 /* CoreMediaIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMediaIO.framework; path = System/Library/Frameworks/CoreMediaIO.framework; sourceTree = SDKROOT; };
 		09C63A8C2631D00500841DC5 /* ZYRecordAudioMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRecordAudioMgr.h; sourceTree = "<group>"; };
 		09C63A8D2631D00500841DC5 /* ZYRecordAudioMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYRecordAudioMgr.mm; sourceTree = "<group>"; };
@@ -90,6 +114,7 @@
 		09C63A8F2631D00500841DC5 /* ZYPlayAudioMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPlayAudioMgr.h; sourceTree = "<group>"; };
 		09C63A962631D05700841DC5 /* RecordAudio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecordAudio.cpp; sourceTree = "<group>"; };
 		09C63A972631D05700841DC5 /* RecordAudio.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecordAudio.hpp; sourceTree = "<group>"; };
+		09E608162690C39B000F1922 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../opt/homebrew/Cellar/sdl2/2.0.14_1/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,18 +122,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0987EECA262DC47800926D6E /* libswscale.a in Frameworks */,
-				0987EEC7262DC47800926D6E /* libavutil.a in Frameworks */,
-				0987EEC4262DC47800926D6E /* libavfilter.a in Frameworks */,
-				0987EEC3262DC47800926D6E /* libavdevice.a in Frameworks */,
-				0987EEC5262DC47800926D6E /* libavformat.a in Frameworks */,
-				0987EEB7262DC45800926D6E /* libSDL2.a in Frameworks */,
-				0987EEB6262DC45800926D6E /* libSDL2_test.a in Frameworks */,
-				0987EEC6262DC47800926D6E /* libavresample.a in Frameworks */,
-				0987EEC8262DC47800926D6E /* libpostproc.a in Frameworks */,
-				0987EEB8262DC45800926D6E /* libSDL2main.a in Frameworks */,
-				0987EEC9262DC47800926D6E /* libswresample.a in Frameworks */,
-				0987EEC2262DC47800926D6E /* libavcodec.a in Frameworks */,
+				09C584792690D0E30097547F /* libavutil.56.70.100.dylib in Frameworks */,
+				09C584712690D0E30097547F /* libavdevice.58.13.100.dylib in Frameworks */,
+				09C584732690D0E30097547F /* libavformat.58.76.100.dylib in Frameworks */,
+				09E608172690C39B000F1922 /* libSDL2-2.0.0.dylib in Frameworks */,
+				09C5847D2690D0E30097547F /* libswscale.5.9.100.dylib in Frameworks */,
+				09C584752690D0E30097547F /* libswresample.3.9.100.dylib in Frameworks */,
+				09C5847B2690D0E30097547F /* libavfilter.7.110.100.dylib in Frameworks */,
+				09C5846F2690D0E30097547F /* libavcodec.58.134.100.dylib in Frameworks */,
+				09C584772690D0E30097547F /* libpostproc.55.9.100.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,19 +211,16 @@
 		090BEE98261C21A9009D59C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09C584672690D0E30097547F /* libavcodec.58.134.100.dylib */,
+				09C584682690D0E30097547F /* libavdevice.58.13.100.dylib */,
+				09C5846D2690D0E30097547F /* libavfilter.7.110.100.dylib */,
+				09C584692690D0E30097547F /* libavformat.58.76.100.dylib */,
+				09C5846C2690D0E30097547F /* libavutil.56.70.100.dylib */,
+				09C5846B2690D0E30097547F /* libpostproc.55.9.100.dylib */,
+				09C5846A2690D0E30097547F /* libswresample.3.9.100.dylib */,
+				09C5846E2690D0E30097547F /* libswscale.5.9.100.dylib */,
+				09E608162690C39B000F1922 /* libSDL2-2.0.0.dylib */,
 				09C63A6A262F386A00841DC5 /* CoreMediaIO.framework */,
-				0987EEBD262DC47400926D6E /* libavcodec.a */,
-				0987EEC0262DC47400926D6E /* libavdevice.a */,
-				0987EEBF262DC47400926D6E /* libavfilter.a */,
-				0987EEBB262DC47400926D6E /* libavformat.a */,
-				0987EEC1262DC47400926D6E /* libavresample.a */,
-				0987EEB9262DC47400926D6E /* libavutil.a */,
-				0987EEBC262DC47400926D6E /* libpostproc.a */,
-				0987EEBE262DC47400926D6E /* libswresample.a */,
-				0987EEBA262DC47400926D6E /* libswscale.a */,
-				0987EEB4262DC45600926D6E /* libSDL2_test.a */,
-				0987EEB5262DC45600926D6E /* libSDL2.a */,
-				0987EEB3262DC45600926D6E /* libSDL2main.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,6 +259,7 @@
 				090BEE5E261C2119009D59C8 /* Sources */,
 				090BEE5F261C2119009D59C8 /* Frameworks */,
 				090BEE60261C2119009D59C8 /* Resources */,
+				09EDE2FB268B74830047D9AA /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -533,11 +553,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development: 1204473090@qq.com (KGD7TUGTWB)";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T6FCKHRT95;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = "";
 				HEADER_SEARCH_PATHS = (
-					/usr/local/Cellar/ffmpeg/4.3.2_4/include,
-					"/usr/local/Cellar/sdl2/2.0.14_1/include/**",
+					/usr/local/Cellar/ffmpeg/include,
+					"/opt/homebrew/Cellar/sdl2/2.0.14_1/include/**",
 				);
 				INFOPLIST_FILE = "03-RecordAudio/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -546,9 +567,9 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/sdl2/2.0.14_1/lib,
-					/usr/local/Cellar/ffmpeg/4.3.2_4/lib,
+					/usr/local/Cellar/ffmpeg/lib,
 					"$(PROJECT_DIR)/03-RecordAudio/lib",
+					/opt/homebrew/Cellar/sdl2/2.0.14_1/lib,
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "xxxx.-3-RecordAudio";
@@ -570,8 +591,8 @@
 				DEVELOPMENT_TEAM = T6FCKHRT95;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/Cellar/ffmpeg/4.3.2_4/include,
-					"/usr/local/Cellar/sdl2/2.0.14_1/include/**",
+					/usr/local/Cellar/ffmpeg/include,
+					"/opt/homebrew/Cellar/sdl2/2.0.14_1/include/**",
 				);
 				INFOPLIST_FILE = "03-RecordAudio/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -580,10 +601,11 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/ffmpeg/4.3.2_4/lib,
+					/usr/local/Cellar/ffmpeg/lib,
 					"$(PROJECT_DIR)/03-RecordAudio/lib",
-					/usr/local/Cellar/sdl2/2.0.14_1/lib,
+					/opt/homebrew/Cellar/sdl2/2.0.14_1/lib,
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "xxxx.-3-RecordAudio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
