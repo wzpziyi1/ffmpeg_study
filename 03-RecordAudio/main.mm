@@ -6,7 +6,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "ZYPlayPCMMgr.h"
+#import "ZYRecordAudioMgr.h"
 extern "C" {
 #import <libavdevice/avdevice.h>
 }
@@ -15,6 +15,6 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // Setup code that might create autoreleased objects goes here.
     }
-    [ZYPlayPCMMgr registerAllDevice];
+    [ZYRecordAudioMgr registerAllDevice];
     return NSApplicationMain(argc, argv);
 }

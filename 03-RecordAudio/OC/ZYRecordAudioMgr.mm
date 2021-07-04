@@ -1,11 +1,11 @@
 //
-//  ZYPlayPCMMgr.m
+//  ZYRecordAudioMgr.m
 //  03-RecordAudio
 //
 //  Created by wzp on 2021/4/13.
 //
 
-#import "ZYPlayPCMMgr.h"
+#import "ZYRecordAudioMgr.h"
 #import "ZYAudioConverMgr.h"
 
 extern "C" {
@@ -27,14 +27,14 @@ extern "C" {
 #define kWavAudioPath @"/Users/wzp/Downloads/xxxxx.wav"
 
 
-@interface ZYPlayPCMMgr()
+@interface ZYRecordAudioMgr()
 @property (nonatomic, strong) dispatch_queue_t serial_queue;
 
 
 @property (atomic, assign) BOOL isStop;
 @end
 
-@implementation ZYPlayPCMMgr
+@implementation ZYRecordAudioMgr
 + (void)registerAllDevice
 {
     avdevice_register_all();

@@ -33,7 +33,7 @@
 		09C5847D2690D0E30097547F /* libswscale.5.9.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C5846E2690D0E30097547F /* libswscale.5.9.100.dylib */; };
 		09C5847E2690D0E30097547F /* libswscale.5.9.100.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09C5846E2690D0E30097547F /* libswscale.5.9.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		09C584962691FD130097547F /* ZYPlayWavMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09C584942691FD130097547F /* ZYPlayWavMgr.mm */; };
-		09C63A912631D00500841DC5 /* ZYPlayPCMMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09C63A8D2631D00500841DC5 /* ZYPlayPCMMgr.mm */; };
+		09C63A912631D00500841DC5 /* ZYRecordAudioMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09C63A8D2631D00500841DC5 /* ZYRecordAudioMgr.mm */; };
 		09C63A922631D00500841DC5 /* ZYPlayAudioMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09C63A8E2631D00500841DC5 /* ZYPlayAudioMgr.mm */; };
 		09C63A982631D05700841DC5 /* RecordAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09C63A962631D05700841DC5 /* RecordAudio.cpp */; };
 		09E608172690C39B000F1922 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E608162690C39B000F1922 /* libSDL2-2.0.0.dylib */; };
@@ -111,8 +111,8 @@
 		09C584942691FD130097547F /* ZYPlayWavMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYPlayWavMgr.mm; sourceTree = "<group>"; };
 		09C584952691FD130097547F /* ZYPlayWavMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPlayWavMgr.h; sourceTree = "<group>"; };
 		09C63A6A262F386A00841DC5 /* CoreMediaIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMediaIO.framework; path = System/Library/Frameworks/CoreMediaIO.framework; sourceTree = SDKROOT; };
-		09C63A8C2631D00500841DC5 /* ZYPlayPCMMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPlayPCMMgr.h; sourceTree = "<group>"; };
-		09C63A8D2631D00500841DC5 /* ZYPlayPCMMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYPlayPCMMgr.mm; sourceTree = "<group>"; };
+		09C63A8C2631D00500841DC5 /* ZYRecordAudioMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRecordAudioMgr.h; sourceTree = "<group>"; };
+		09C63A8D2631D00500841DC5 /* ZYRecordAudioMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYRecordAudioMgr.mm; sourceTree = "<group>"; };
 		09C63A8E2631D00500841DC5 /* ZYPlayAudioMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYPlayAudioMgr.mm; sourceTree = "<group>"; };
 		09C63A8F2631D00500841DC5 /* ZYPlayAudioMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPlayAudioMgr.h; sourceTree = "<group>"; };
 		09C63A962631D05700841DC5 /* RecordAudio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecordAudio.cpp; sourceTree = "<group>"; };
@@ -237,8 +237,8 @@
 				0904A1722634662000E721C3 /* ZYAudioConverMgr.mm */,
 				09C63A8F2631D00500841DC5 /* ZYPlayAudioMgr.h */,
 				09C63A8E2631D00500841DC5 /* ZYPlayAudioMgr.mm */,
-				09C63A8C2631D00500841DC5 /* ZYPlayPCMMgr.h */,
-				09C63A8D2631D00500841DC5 /* ZYPlayPCMMgr.mm */,
+				09C63A8C2631D00500841DC5 /* ZYRecordAudioMgr.h */,
+				09C63A8D2631D00500841DC5 /* ZYRecordAudioMgr.mm */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -386,7 +386,7 @@
 				09C63A922631D00500841DC5 /* ZYPlayAudioMgr.mm in Sources */,
 				090BEE6A261C2119009D59C8 /* ViewController.mm in Sources */,
 				09C584962691FD130097547F /* ZYPlayWavMgr.mm in Sources */,
-				09C63A912631D00500841DC5 /* ZYPlayPCMMgr.mm in Sources */,
+				09C63A912631D00500841DC5 /* ZYRecordAudioMgr.mm in Sources */,
 				09C63A982631D05700841DC5 /* RecordAudio.cpp in Sources */,
 				090BEE72261C211B009D59C8 /* main.mm in Sources */,
 				0904A1732634662000E721C3 /* ZYAudioConverMgr.mm in Sources */,

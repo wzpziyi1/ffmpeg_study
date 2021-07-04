@@ -1,5 +1,5 @@
 //
-//  ZYPlayPCMMgr.h
+//  ZYRecordAudioMgr.h
 //  03-RecordAudio
 //
 //  Created by wzp on 2021/4/13.
@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZYPlayPCMMgr : NSObject
+@interface ZYRecordAudioMgr : NSObject
 + (void)registerAllDevice;
 
 #pragma mark - record audio
