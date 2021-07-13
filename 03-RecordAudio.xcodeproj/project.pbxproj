@@ -30,6 +30,7 @@
 		09609ED6263C04BC005E635F /* ZYPlayPCMMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09609ED0263C04BC005E635F /* ZYPlayPCMMgr.mm */; };
 		09A46B9726328AFF001DD357 /* AudioConver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09A46B9526328AFF001DD357 /* AudioConver.cpp */; };
 		09C52EA7264BC2A9007A00D6 /* ZYPlayWavMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09C52EA6264BC2A9007A00D6 /* ZYPlayWavMgr.mm */; };
+		09DB979B2695D9D600B0C4D2 /* ZYAACEncodeMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09DB979A2695D9D600B0C4D2 /* ZYAACEncodeMgr.mm */; };
 		09EF7ACD2629769B004C28DE /* libSDL2_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF7ACA26297699004C28DE /* libSDL2_test.a */; };
 		09EF7ACE2629769B004C28DE /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF7ACB26297699004C28DE /* libSDL2.a */; };
 		09EF7ACF2629769B004C28DE /* libSDL2main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF7ACC26297699004C28DE /* libSDL2main.a */; };
@@ -95,6 +96,8 @@
 		09A46B9626328AFF001DD357 /* AudioConver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AudioConver.hpp; sourceTree = "<group>"; };
 		09C52EA5264BC2A9007A00D6 /* ZYPlayWavMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYPlayWavMgr.h; sourceTree = "<group>"; };
 		09C52EA6264BC2A9007A00D6 /* ZYPlayWavMgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYPlayWavMgr.mm; sourceTree = "<group>"; };
+		09DB97992695D9D600B0C4D2 /* ZYAACEncodeMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYAACEncodeMgr.h; sourceTree = "<group>"; };
+		09DB979A2695D9D600B0C4D2 /* ZYAACEncodeMgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYAACEncodeMgr.mm; sourceTree = "<group>"; };
 		09EF7ACA26297699004C28DE /* libSDL2_test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_test.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.9/lib/libSDL2_test.a; sourceTree = "<group>"; };
 		09EF7ACB26297699004C28DE /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.9/lib/libSDL2.a; sourceTree = "<group>"; };
 		09EF7ACC26297699004C28DE /* libSDL2main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2main.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.9/lib/libSDL2main.a; sourceTree = "<group>"; };
@@ -248,6 +251,8 @@
 				09609ECD263C04BC005E635F /* ZYRecordAudioMgr.mm */,
 				09609ECC263C04BC005E635F /* ZYReSampleMgr.h */,
 				09609ECB263C04BC005E635F /* ZYReSampleMgr.mm */,
+				09DB97992695D9D600B0C4D2 /* ZYAACEncodeMgr.h */,
+				09DB979A2695D9D600B0C4D2 /* ZYAACEncodeMgr.mm */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -383,6 +388,7 @@
 				090BEE6A261C2119009D59C8 /* ViewController.mm in Sources */,
 				09609ED2263C04BC005E635F /* RecordAudio.cpp in Sources */,
 				090BEE72261C211B009D59C8 /* main.mm in Sources */,
+				09DB979B2695D9D600B0C4D2 /* ZYAACEncodeMgr.mm in Sources */,
 				09609ED4263C04BC005E635F /* ZYRecordAudioMgr.mm in Sources */,
 				09C52EA7264BC2A9007A00D6 /* ZYPlayWavMgr.mm in Sources */,
 				09A46B9726328AFF001DD357 /* AudioConver.cpp in Sources */,
@@ -558,8 +564,9 @@
 				DEVELOPMENT_TEAM = T6FCKHRT95;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/Cellar/ffmpeg/4.3.1_9/include,
+					/usr/local/ffmpeg/include,
 					/usr/local/Cellar/sdl2/2.0.9/include,
+					"/usr/local/Cellar/fdk-aac/2.0.1/include/**",
 				);
 				INFOPLIST_FILE = "03-RecordAudio/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,8 +576,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/sdl2/2.0.9/lib,
-					/usr/local/Cellar/ffmpeg/4.3.1_9/lib,
+					/usr/local/ffmpeg/lib,
 					"$(PROJECT_DIR)/03-RecordAudio/lib",
+					"/usr/local/Cellar/fdk-aac/2.0.1/lib",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "xxxx.-3-RecordAudio";
@@ -589,8 +597,9 @@
 				DEVELOPMENT_TEAM = T6FCKHRT95;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
-					"/usr/local/Cellar/ffmpeg/4.3.1_9/include/**",
+					"/usr/local/ffmpeg/include/**",
 					"/usr/local/Cellar/sdl2/2.0.9/include/**",
+					"/usr/local/Cellar/fdk-aac/2.0.1/include/**",
 				);
 				INFOPLIST_FILE = "03-RecordAudio/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -599,9 +608,10 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/ffmpeg/4.3.1_9/lib,
+					/usr/local/ffmpeg/lib,
 					"$(PROJECT_DIR)/03-RecordAudio/lib",
 					/usr/local/Cellar/sdl2/2.0.9/lib,
+					"/usr/local/Cellar/fdk-aac/2.0.1/lib",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "xxxx.-3-RecordAudio";
